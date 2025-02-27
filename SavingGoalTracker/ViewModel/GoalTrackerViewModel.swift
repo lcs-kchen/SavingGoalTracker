@@ -6,9 +6,14 @@
 //
 
 import Foundation
+
+@Observable
 class GoalTrackerViewModel {
     
     //Stored properties
+    
+    var resultHistory: [GoalTracker] = []
+    
     var providedCurrentSavingsAmount: String
     
     var providedTargetSavingsAmount: String
@@ -40,15 +45,24 @@ class GoalTrackerViewModel {
     }
     //Mark: Initializer
     init(
-        providedCurrentSavingsAmount: String,
-        providedTargetSavingsAmount: String,
-        providedMonthlyContribution: String,
-        recoverySuggestion: String
+        providedCurrentSavingsAmount: String = "",
+        providedTargetSavingsAmount: String = "",
+        providedMonthlyContribution: String = "",
+        recoverySuggestion: String = ""
     ) {
         self.providedCurrentSavingsAmount = providedCurrentSavingsAmount
         self.providedTargetSavingsAmount = providedTargetSavingsAmount
         self.providedMonthlyContribution = providedMonthlyContribution
         self.recoverySuggestion = recoverySuggestion
+    }
+    
+    func saveResult() {
+        
+        if let goalTracker = self.goalTracker {
+           
+            self.resultHistory.insert(goalTracker, at: 0)
+        }
+        
     }
 }
 
