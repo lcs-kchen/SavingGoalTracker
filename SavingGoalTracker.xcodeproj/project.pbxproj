@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		84E8A43C2D70AE2F00178CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A4392D70AE2F00178CAC /* ContentView.swift */; };
+		84E8A43D2D70AE2F00178CAC /* SavingGoalTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A43A2D70AE2F00178CAC /* SavingGoalTrackerApp.swift */; };
+		84E8A43E2D70AE2F00178CAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A4362D70AE2F00178CAC /* Preview Assets.xcassets */; };
+		84E8A43F2D70AE2F00178CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A4382D70AE2F00178CAC /* Assets.xcassets */; };
+		84E8A4442D70AE6700178CAC /* GoalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A4432D70AE5E00178CAC /* GoalTracker.swift */; };
+		84E8A4462D70AE8300178CAC /* GoalTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A4452D70AE7A00178CAC /* GoalTrackerViewModel.swift */; };
+		84E8A4482D70AEDF00178CAC /* GoalTrackerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A4472D70AED200178CAC /* GoalTrackerItemView.swift */; };
+		84E8A44A2D70AEF100178CAC /* GoalTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A4492D70AEED00178CAC /* GoalTrackerView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		84E8A4252D70AE1F00178CAC /* SavingGoalTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingGoalTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E8A4362D70AE2F00178CAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84E8A4382D70AE2F00178CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E8A4392D70AE2F00178CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84E8A43A2D70AE2F00178CAC /* SavingGoalTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingGoalTrackerApp.swift; sourceTree = "<group>"; };
+		84E8A4432D70AE5E00178CAC /* GoalTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTracker.swift; sourceTree = "<group>"; };
+		84E8A4452D70AE7A00178CAC /* GoalTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerViewModel.swift; sourceTree = "<group>"; };
+		84E8A4472D70AED200178CAC /* GoalTrackerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerItemView.swift; sourceTree = "<group>"; };
+		84E8A4492D70AEED00178CAC /* GoalTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		84E8A4272D70AE1F00178CAC /* SavingGoalTracker */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SavingGoalTracker;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84E8A4222D70AE1F00178CAC /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		84E8A41C2D70AE1E00178CAC = {
 			isa = PBXGroup;
 			children = (
-				84E8A4272D70AE1F00178CAC /* SavingGoalTracker */,
+				84E8A43B2D70AE2F00178CAC /* SavingGoalTracker */,
 				84E8A4262D70AE1F00178CAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,53 @@
 				84E8A4252D70AE1F00178CAC /* SavingGoalTracker.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84E8A4372D70AE2F00178CAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A4362D70AE2F00178CAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84E8A43B2D70AE2F00178CAC /* SavingGoalTracker */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A4422D70AE5900178CAC /* Model */,
+				84E8A4412D70AE5100178CAC /* ViewModel */,
+				84E8A4402D70AE4800178CAC /* View */,
+				84E8A4372D70AE2F00178CAC /* Preview Content */,
+				84E8A4382D70AE2F00178CAC /* Assets.xcassets */,
+				84E8A4392D70AE2F00178CAC /* ContentView.swift */,
+				84E8A43A2D70AE2F00178CAC /* SavingGoalTrackerApp.swift */,
+			);
+			path = SavingGoalTracker;
+			sourceTree = "<group>";
+		};
+		84E8A4402D70AE4800178CAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A4492D70AEED00178CAC /* GoalTrackerView.swift */,
+				84E8A4472D70AED200178CAC /* GoalTrackerItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84E8A4412D70AE5100178CAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A4452D70AE7A00178CAC /* GoalTrackerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84E8A4422D70AE5900178CAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A4432D70AE5E00178CAC /* GoalTracker.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				84E8A4272D70AE1F00178CAC /* SavingGoalTracker */,
 			);
 			name = SavingGoalTracker;
 			packageProductDependencies = (
@@ -109,6 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E8A43E2D70AE2F00178CAC /* Preview Assets.xcassets in Resources */,
+				84E8A43F2D70AE2F00178CAC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E8A4462D70AE8300178CAC /* GoalTrackerViewModel.swift in Sources */,
+				84E8A4482D70AEDF00178CAC /* GoalTrackerItemView.swift in Sources */,
+				84E8A43C2D70AE2F00178CAC /* ContentView.swift in Sources */,
+				84E8A4442D70AE6700178CAC /* GoalTracker.swift in Sources */,
+				84E8A44A2D70AEF100178CAC /* GoalTrackerView.swift in Sources */,
+				84E8A43D2D70AE2F00178CAC /* SavingGoalTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
